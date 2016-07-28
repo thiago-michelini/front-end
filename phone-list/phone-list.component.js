@@ -2,8 +2,8 @@ angular.
   module('phoneList').
   component('phoneList', {
     templateUrl: 'phone-list/phone-list.template.html',
-    controller: ['$http',
-      function PhoneListController($http) {
+    controller: ['$http','$location',
+      function PhoneListController($http, $location) {
         var self = this;
         self.orderProp = 'age';
 

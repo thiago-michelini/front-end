@@ -1,8 +1,8 @@
 'use strict';
 
 // Define the `phonecatApp` module
-angular.module('phonecatApp', [
+angular.module('crudUsuarioApp', [
 	'ngRoute',
-	'phoneDetail',
-	'phoneList'
+	'usuarioDetalhe',
+	'usuarioLista'
 ]);

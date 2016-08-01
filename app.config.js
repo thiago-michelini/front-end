@@ -1,19 +1,19 @@
 'use strict';
 
 angular.
-  module('phonecatApp').
+  module('crudUsuarioApp').
   config(['$locationProvider', '$routeProvider',
     function config($locationProvider, $routeProvider) {
       $locationProvider.hashPrefix('!');
 
       $routeProvider.
-        when('/phones', {
-          template: '<phone-list></phone-list>'
+        when('/usuario', {
+          template: '<usuario-lista></usuario-lista>'
         }).
         //when('/phones/:phoneId', {
-        when('/phones/:phoneId', {
-          template: '<phone-detail></phone-detail>'
+        when('/usuario/:usuarioId', {
+          template: '<usuario-detalhe></usuario-detalhe>'
         }).
-        otherwise('/phones');
+        otherwise('/usuario');
     }
   ]);

@@ -1,5 +1,9 @@
 'use strict';
 
+var NOME_APLICACAO = 'Tutorial Angular';
+var urlBasePortal = window.location.protocol + '//' + window.location.host + '/portal';
+var DEPENDENCIA_MATERIALIZE = true;
+
 angular.
   module('phonecatApp').
   config(['$locationProvider', '$routeProvider',
@@ -17,3 +21,7 @@ angular.
         otherwise('/phones');
     }
   ]);
+
+$(function(){
+  $('<script src="' + urlBasePortal + '/js/header-apps.js"></script>').insertAfter($('#app-config-js'));
+});

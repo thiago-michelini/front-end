@@ -2,7 +2,6 @@
 
 var NOME_APLICACAO = 'Tutorial Angular';
 var urlBasePortal = window.location.protocol + '//' + window.location.host + '/portal';
-var DEPENDENCIA_MATERIALIZE = true;
 
 angular.
   module('phonecatApp').
@@ -23,5 +22,6 @@ angular.
   ]);
 
 $(function(){
+  //insere o JS que monta o Header de aplicacoes, que serah comum para todas as APPS
   $('<script src="' + urlBasePortal + '/js/header-apps.js"></script>').insertAfter($('#app-config-js'));
 });

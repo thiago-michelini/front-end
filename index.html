@@ -8,13 +8,16 @@
   </head>
   <body>
 
+    <!--div onde o cabecalho (header) eh injetado-->
     <div id="header-apps"></div>
+    
 	  <div ng-view></div>
 
     <script src="components/angular/angular.js"></script>
     <script src="components/angular-route/angular-route.js"></script>
     <script src="app.module.js"></script>
     <script src="components/jquery-3.1.0.min.js"></script>
+    <!--manter o id 'app-config-js', pois eh utilizado como referencia para injetar o cabecalho (header)-->
     <script id="app-config-js" src="app.config.js"></script>
     <script src="phone-list/phone-list.module.js"></script>
     <script src="phone-list/phone-list.component.js"></script>
